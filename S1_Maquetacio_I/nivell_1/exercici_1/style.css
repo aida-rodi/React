@@ -1,0 +1,70 @@
+* {
+    margin: 0.5em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+.parent {
+    display: flex;
+    flex-flow: column nowrap;
+}
+    header {
+        background: rgb(29, 29, 29);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu {
+            background: rgb(44, 76, 85);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+            .logo {
+                background: rgb(211, 123, 111);
+                flex: 1 1 auto;
+            }
+            .nav {
+                background: rgb(211, 123, 111);
+                flex: 5 1 auto;
+            }
+            .socials {
+                background: rgb(211, 123, 111);
+                flex: 1 1 auto;
+            }
+        .banner {
+            background: rgb(219, 120, 73);
+        }
+            h1 {
+                background: rgb(243, 204, 74);
+            }
+    section {
+        background: rgb(29, 29, 29);
+        display: flex;
+    }
+        .articles {
+            background: rgb(44, 76, 85);
+            display: flex;
+            flex-flow: row wrap;
+            flex: 2 1 auto;
+        }
+            article {
+                background: rgb(16, 139, 177);
+                flex: 1 1 40%;
+            }
+            .info {
+                background: rgb(98, 170, 192);
+                flex: 1 1 100%;
+            }
+        aside {
+            background: rgb(185, 81, 67);
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+            .asideText {
+                background: rgb(243, 204, 74);
+            }
+    footer {
+        background: rgb(29, 29, 29);
+    }
+        .copyright {
+            background: rgb(243, 204, 74);
+        }
