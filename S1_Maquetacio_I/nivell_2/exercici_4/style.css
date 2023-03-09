@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+* {
+    margin: 0.5em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+.parent {
+    display: flex;
+    flex-flow: column nowrap;
+}
+    header {
+        background-image: url(headerBackground.jpg);
+        background-color: rgb(194, 194, 194);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-bottom: 0;
+    }
+        .menu {
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 0;
+        }
+            .logo {
+                flex: 1 1 auto;
+                padding: 0;
+            }
+                .logoImage {
+                    width: 4em;
+                    padding: 0;
+                    margin: 0;
+                }
+            .nav {
+                flex: 5 1 auto;
+                display: flex;
+                justify-content: space-evenly;
+            }
+                .navButton {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                }
+                .icon {
+                    filter: opacity(0.4);
+                    width: 1em;
+                    padding: 0;
+                    margin: 0 0.5em 0 0;
+                }
+                .iconText {
+                    color: grey;
+                    padding: 0;
+                    margin: 0;
+                }
+            .socials {
+                flex: 1 1 auto;
+                padding: 0;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .socialsIcon {
+                filter: opacity(0.4);
+                width: 1em;
+                padding: 0;
+                margin: 0;
+            }
+        .banner {
+            background: rgb(203, 203, 203);
+            text-align: center;
+            color: rgb(211, 123, 111);
+            justify-self: flex-end;
+            align-self: center;
+            width: 85%;
+            margin-bottom: 0;
+            margin-top: 11em;
+        }
+            /* h1 {
+                
+            } */
+    section {
+        background: rgb(29, 29, 29);
+        display: flex;
+    }
+        .articles {
+            background: rgb(44, 76, 85);
+            display: flex;
+            flex-flow: row wrap;
+            flex: 2 1 auto;
+        }
+            article {
+                background: rgb(16, 139, 177);
+                flex: 1 1 40%;
+            }
+            .info {
+                background: rgb(98, 170, 192);
+                flex: 1 1 100%;
+            }
+        aside {
+            background: rgb(185, 81, 67);
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+            .asideText {
+                background: rgb(243, 204, 74);
+            }
+    footer {
+        background: rgb(29, 29, 29);
+    }
+        .copyright {
+            background: rgb(243, 204, 74);
+        }
+
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        background: rgb(243, 204, 74);
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+    }
+        .nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    section {
+        flex-direction: column;
+        background: rgb(243, 204, 74);
+    }
+        .articles {
+            background: rgb(32, 101, 122);
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 2 1 auto;
+        }
+            article {
+                background: rgb(81, 141, 160);
+            }
+            .info {
+                background: rgb(122, 207, 196);
+            }
+        aside {
+            background: rgb(219, 120, 73);
+        }
+            .asideText {
+                background: rgb(252, 175, 125);
+            }
+}
